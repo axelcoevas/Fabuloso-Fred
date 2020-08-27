@@ -77,48 +77,96 @@ body {
     background: #523103;
 }
 
+.marron.light{
+    background: #d17b07;
+}
+
 .rosa{
     background: #e162ce
+}
+
+.rosa.light{
+    background: #f1b8e9
 }
 
 .rojo{
     background: #ce0000;
 }
 
+.rojo.light{
+    background: #ff9797;
+}
+
 .mostaza{
     background: #c8a915;
+}
+
+.mostaza.light{
+    background: #ffe566;
 }
 
 .azul{
     background: #000080;
 }
 
+.azul.light{
+    background: #2f2fff;
+}
+
 .amarillo{
     background: #f0e953;
+}
+
+.amarillo.light{
+    background: #fffbb2;
 }
 
 .cyan{
     background: #00ffff;
 }
 
+.cyan.light{
+    background: #befdfd;
+}
+
 .limon{
     background: #80ff00;
+}
+
+.limon.light{
+    background: #d1ffa2;
 }
 
 .naranja{
     background: #ff8000;
 }
 
+.naranja.light{
+    background: #ffc992;
+}
+
 .guinda{
     background: #5b0020;
+}
+
+.guinda.light{
+    background: #eb0052;
 }
 
 .verde{
     background: #004000;
 }
 
+.verde.light{
+    background: #01ce01;
+}
+
 .violeta{
     background: #ffbfdf;
+}
+
+.violeta.light{
+    background: #ffe6f2;
 }
 
 .hide {
