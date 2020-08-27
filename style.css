@@ -18,13 +18,12 @@ body {
 }
 
 .title-container{
-    width: 50%;
+    width: 90%;
     height: 70%;
     color: white;
     background: black;
     padding: 0 5%;
     margin: auto;
-    margin-right: 10px;
     display: flex;
 }
 
@@ -52,7 +51,7 @@ body {
     margin: auto;
     margin-right: 10px;
     border-radius: 10%;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .gamepad {
@@ -66,7 +65,7 @@ body {
 .color{ 
     box-sizing: border-box;
     float: left;
-    width: 21%; 
+    width: 22.5%; 
     height: 29.3%; 
     margin: 1%;
     padding: 1%;  
@@ -175,4 +174,18 @@ body {
 
 *{
     font-family: 'Century Gothic';
+}
+
+@media (max-width: 500px) { 
+    .btn-start{
+        font-size: 10px;
+    }
+
+    .title{
+        font-size: 10px;
+    }
+
+    .gamepad{
+        width: 100%;
+    }
 }

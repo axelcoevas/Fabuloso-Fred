@@ -10,9 +10,13 @@
 </head>
 <body>
     <div id="score-container" class="score-container">
-        <span class="title-container"><p class="title">FABULOSO FRED</p></span>
-        <span class="number-container"><p id="score" class="score"></p></span>
-        <button id="startButton" class="btn-start" onclick="startGame()">PLAY</button>
+        <span class="title-container">
+            <p class="title">FABULOSO FRED</p>
+            <p id="maxScore" class="title">MAX SCORE: 0</p>
+            <p id="score" class="title">SCORE: 0</p>
+            <button id="startButton" class="btn-start" onclick="startGame()">PLAY</button>
+        </span>
+        
     </div>
     <div id="gamepad" class="gamepad">
         <div id="marron" class="color marron f1" data-color="marron" data-number="0"></div>

@@ -1,6 +1,7 @@
 if (document.readyState === 'complete') {
     const startButton = document.getElementById('startButton')
     const score = document.getElementById('score')
+    const maxScore = document.getElementById('maxScore')
     const marron = document.getElementById('marron')
     const rosa = document.getElementById('rosa')
     const rojo = document.getElementById('rojo')
@@ -19,7 +20,7 @@ if (document.readyState === 'complete') {
 class Game {
     constructor() {
         this.init()
-        this.nextLevel()
+        setTimeout(this.nextLevel, 500)
     }
 
     init(){
@@ -47,22 +48,31 @@ class Game {
             violeta
         ]
 
+        this.setMaxScore()
         this.level = 0;
         this.sublevel = 0;
         this.secuence = [];
         this.removeEventClick()
-        
+        this.toggleStartButton()
+        score.innerHTML = 'SCORE: 0'
     }
 
     nextLevel() {
-        this.removeEventClick()
-        score.innerHTML = this.level
+        score.innerHTML = 'SCORE: ' + this.level
         this.sublevel = 0;
         this.level++;
         const nextNum = this.getNextNumber()
         this.secuence.push(nextNum)
         this.lightSecuence()
         this.addEventClick()
+    }
+
+    toggleStartButton() {
+        if(startButton.classList.contains('hide')){
+            startButton.classList.remove('hide') 
+        } else {
+            startButton.classList.add('hide') 
+        }
     }
 
     getNextNumber() {
@@ -84,15 +94,15 @@ class Game {
     }
 
     chooseColor(ev) {
-        console.log(ev)
         const colorId = ev.target.dataset.number
         this.lightColor(colorId)
         if(colorId == this.secuence[this.sublevel]) {
             this.sublevel++
             if(this.sublevel === this.level) {
+                this.removeEventClick()
                 setTimeout(this.nextLevel, 1500)
             }
-        } else {
+        }else {
             this.end()
         }
     }
@@ -108,7 +118,18 @@ class Game {
 
     end() {
         swal('Juego terminado', `Tu puntuación fue de ${score.innerHTML}`)
-            .then(() => this.init())
+            .then(() => {
+                this.removeEventClick()
+                this.init()
+            })
+    }
+
+    setMaxScore() {
+        let mxs = 0;
+        const score = this.level - 1
+        mxs = score > mxs ? score : mxs
+        const chain = 'MAX SCORE: ' + mxs
+        maxScore.innerHTML = chain
     }
 }
 
