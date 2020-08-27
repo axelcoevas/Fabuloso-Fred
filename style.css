@@ -1,0 +1,130 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background: #dedede;
+    align-items: center;
+}
+
+.score-container{
+    height: 10%;
+    width: 100%;
+    display: inline-flex;
+}
+
+.title-container{
+    width: 50%;
+    height: 70%;
+    color: white;
+    background: black;
+    padding: 0 5%;
+    margin: auto;
+    margin-right: 10px;
+    display: flex;
+}
+
+.number-container{
+    width: auto;
+    height: 70%;
+    color: white;
+    background: black;
+    padding: 0 5%;
+    margin: auto;
+    display: flex;
+}
+
+.title, .score{
+    margin: auto;
+    font-size: 20px;
+}
+
+.btn-start{
+    background: #008000;
+    height: 70%;
+    width: 10%;
+    color: white;
+    border: 0;
+    margin: auto;
+    margin-right: 10px;
+    border-radius: 10%;
+    font-size: 30px;
+}
+
+.gamepad {
+    padding: 0;
+    margin: 0 auto;
+    height: 90%;
+    width: 70%;
+    background: black
+}
+
+.color{ 
+    box-sizing: border-box;
+    float: left;
+    width: 21%; 
+    height: 29.3%; 
+    margin: 1%;
+    padding: 1%;  
+    border-radius: 5% 5% 5% 30%;
+  }
+
+.marron{
+    background: #523103;
+}
+
+.rosa{
+    background: #e162ce
+}
+
+.rojo{
+    background: #ce0000;
+}
+
+.mostaza{
+    background: #c8a915;
+}
+
+.azul{
+    background: #000080;
+}
+
+.amarillo{
+    background: #f0e953;
+}
+
+.cyan{
+    background: #00ffff;
+}
+
+.limon{
+    background: #80ff00;
+}
+
+.naranja{
+    background: #ff8000;
+}
+
+.guinda{
+    background: #5b0020;
+}
+
+.verde{
+    background: #004000;
+}
+
+.violeta{
+    background: #ffbfdf;
+}
+
+.hide {
+    display: none !important;
+}
+
+*{
+    font-family: 'Century Gothic';
+}
